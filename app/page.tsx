@@ -40,8 +40,8 @@ export default function Home() {
     {name: "Stardom", type: "script", file: "Stardom.ttf"},
     {name: "SUNRISE", type: "standard", file: "SUNRISE.ttf"},
     {name: "Valentica", type: "script", file: "Valentica.ttf"},
-    {name: "Wild", type: "standard", file: "Wild.ttf"},
-    {name: "Wildcat", type: "standard", file: "Wild.ttf"},
+    {name: "Wild", type: "script", file: "Wild.ttf"},
+    {name: "Wildcat", type: "script", file: "Wildcat.ttf"},
 
     // ... other fonts from ./fonts folder
 
@@ -56,11 +56,11 @@ export default function Home() {
         <div className='script flex flex-col items-center space-y-5 px-2'>
           <h1 className=' text-2xl font-bold'>Script Fonts</h1>
           <input
-            className='p-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-500 transition duration-300 ease-in-out'
+            className='p-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-500 transition duration-300 ease-in-out  w-28 sm:w-auto min-w-28'
             onChange={(e) => setScriptFontText(e.target.value)}
             type='text'
             name=''
-            placeholder='Enter text here...'
+            placeholder='Enter text...'
             id=''
           />
           <div className='grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
@@ -79,11 +79,11 @@ export default function Home() {
         <div className=' standard flex flex-col items-center space-y-5 px-2'>
           <h1 className='text-2xl font-bold'>Standard Fonts</h1>
           <input
-            className='p-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-500 transition duration-300 ease-in-out'
+            className='p-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-500 transition duration-300 ease-in-out w-28 sm:w-auto min-w-28'
             onChange={(e) => setStandardFontText(e.target.value)}
             type='text'
             name=''
-            placeholder='Enter text here...'
+            placeholder='Enter text...'
             id=''
           />
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 '>

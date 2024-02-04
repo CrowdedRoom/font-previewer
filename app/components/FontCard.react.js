@@ -116,8 +116,10 @@ const getFontClassName = (font) => {
       return Valentica.className;
     case "Wild":
       return Wild.className;
+    case "Wildcat":
+      return Wildcat.className;
     default:
-      return "font-sans";
+      return 'sans-serif';
   }
 };
 
