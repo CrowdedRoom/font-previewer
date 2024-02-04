@@ -41,10 +41,6 @@ const Valentica = localFont({src: "../fonts/Valentica.ttf"});
 const Wild = localFont({src: "../fonts/Wild.ttf"});
 const Wildcat = localFont({src: "../fonts/Wildcat.ttf"});
 
-// export default function Header({ children }) {
-//   //👇 Add our local font as a className
-//   return <h1 className={`${myFont.className} ${styles.header}`}>{children}</h1>
-// }
 
 const getFontClassName = (font) => {
   switch (font) {
@@ -133,7 +129,7 @@ const FontCard = ({value, fontName}) => {
         {fontName}
       </p>
       <div>
-        <p className={`${getFontClassName(fontName)} p-4  text-lg break-words`}>
+        <p className={`${getFontClassName(fontName)} p-4  text-xl break-words`}>
           {value}
         </p>
       </div>
